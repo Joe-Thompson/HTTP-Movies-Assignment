@@ -75,6 +75,16 @@ body {
   background-color: lightseagreen;
 }
 
+.delete-button {
+  position: absolute;
+  top: 140px;
+  right: 25px;
+  border: 1px solid grey;
+  padding: 5px 14px;
+  background-color: crimson;
+  color: white;
+}
+
 .edit-button:hover {
   background-color: green;
   color: white;
@@ -83,9 +93,39 @@ body {
 .home-button {
   padding: 5px 10px;
   background-color: lightskyblue;
+  margin-right: 10px;
+}
+
+.add-button {
+  padding: 5px 3px;
+  margin-left: 20px;
 }
 
 .movie-warning {
   color: red;
   text-align: center;
+}
+
+.submit-button {
+  background-color: lightseagreen;
+  padding: .5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 115rem;
+  align-items: center;
+}
+
+input {
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  width: 30rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
