@@ -8,7 +8,7 @@ const MovieCard = props => {
         event.preventDefault();
             axios.delete(`http://localhost:5000/api/movies/${id}`)
                 .then(result => {
-                    props.history.push("/movies")
+                    props.history.push("/")
                 })
                 .catch(error => {
                     console.log(error);
