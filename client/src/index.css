@@ -2,11 +2,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #f2f2f2;
+  background-color: tomato;
 }
 
 .movie-card {
-  background-color: #fff;
+  background-color: cornsilk;
   border: 0;
   box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
     0 2px 4px rgba(0, 0, 0, 0.24);
@@ -14,6 +14,8 @@ body {
   cursor: pointer;
   position: relative;
   margin: 1rem auto;
+  width: 50rem;
+  border-radius: 1rem;
 }
 
 .movie-director {
@@ -22,7 +24,7 @@ body {
 }
 
 .saved-list {
-  background-color: #fff;
+  background-color: cornsilk;
   border: 0;
   box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
     0 2px 4px rgba(0, 0, 0, 0.24);
@@ -30,7 +32,8 @@ body {
   cursor: pointer;
   position: relative;
   margin: 1rem auto;
-  width: 75%;
+  width: 70%;
+  border-radius: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -56,22 +59,92 @@ body {
 .save-button {
   position: absolute;
   top: 25px;
-  right: 25px;
+  left: 1050px;
   border: 1px solid grey;
   padding: 5px 10px;
-  background-color: lightseagreen;
+  background-color: tomato;
+  color: white;
 }
 .save-button:hover {
-  background-color: green;
+  background-color: white;
+  color: tomato;
+}
+
+.edit-button {
+  position: absolute;
+  top: 80px;
+  left: 1050px;
+  border: 1px solid grey;
+  padding: 5px 14px;
+  background-color: tomato;
   color: white;
+}
+
+.edit-button:hover {
+  background-color: white;
+  color: tomato;
+}
+
+.delete-button {
+  position: absolute;
+  top: 140px;
+  right: 25px;
+  border: 1px solid grey;
+  padding: 5px 14px;
+  background-color: crimson;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: white;
+  color: crimson;
 }
 
 .home-button {
   padding: 5px 10px;
-  background-color: lightskyblue;
+  background-color: tomato;
+  margin-right: 10px;
+  border-radius: .5rem;
+  color: white;
+}
+
+.add-button {
+  padding: 5px 2px;
+  margin: 0 1rem;
+  background-color: tomato;
+  color: white;
 }
 
 .movie-warning {
   color: red;
   text-align: center;
+}
+
+.submit-button {
+  background-color: white;
+  color: tomato;
+  padding: .5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 115rem;
+  align-items: center;
+}
+
+input {
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  width: 30rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  color: white;
 }

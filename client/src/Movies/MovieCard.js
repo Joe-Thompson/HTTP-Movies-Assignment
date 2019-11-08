@@ -1,7 +1,20 @@
 import React from 'react';
+import axios from 'axios';
 
 const MovieCard = props => {
-  const { title, director, metascore, stars } = props.movie;
+  const { title, director, metascore, stars, id } = props.movie;
+
+    const clickHandler = (event, id) => {
+        event.preventDefault();
+            axios.delete(`http://localhost:5000/api/movies/${id}`)
+                .then(result => {
+                    props.history.push("/")
+                })
+                .catch(error => {
+                    console.log(error);
+                })
+        };
+
   return (
     <div className="movie-card">
       <h2>{title}</h2>
@@ -18,6 +31,9 @@ const MovieCard = props => {
           {star}
         </div>
       ))}
+
+      <div className="delete-button" onClick={(event) => clickHandler(event, id)} >Delete</div>
+
     </div>
   );
 };
